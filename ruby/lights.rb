@@ -25,4 +25,4 @@ end
 
 changes = changes.to_a
 puts changes.each_slice(2).map(&:last).reduce(:+) - changes.each_slice(2).map(&:first).reduce(:+)
-puts Time.now - start
+puts "Time Elapsed: #{Time.now - start}s"
